@@ -1,9 +1,13 @@
 # Spatial Wheat analysis
 I intend on creating a spatial wheat analysis for basis where I analyise spatial autocorrelation across Europe in order to indentify possible trading strategies.
 
-The idea is to estimate long run spatial equilibriums between countries in wheat prices, and then identify unusal deviations from thouse equilibriums. This could create a tool to identify intersting events and shocks in the wheat market. Which can be built upon to estimate the type of shock and how often the deviation returns to the long run equilibrium. 
+The idea is to estimate spatial equilibriums between countries in wheat prices, and then identify unusal deviations from thouse equilibriums. This could create a tool to identify intersting events and shocks in the wheat market. Which can be built upon to estimate the type of shock and how often the deviation returns to the equilibrium. 
 
 I will start of by doing this with a baseline spatial lag model, where i identify unusally large error terms in either direction in order to see where prices have deviated unusually. After this I can also make the model autoregressive in order to study how previous months event may linger in certain places. 
+
+## Problem
+The reason for studying spatial disequilibriums in wheat markets are two-fold. Firstly in order to get a better sense of when local disequilibriums occurs, which may be hard to spot by just investigating the price of wheat, since you must measure it in comparison to other places weighted by their connection. Secoundly, the patterns of disequilbiriums can have predictive power, if there for example are clear trends of "overshoot" after a disequilibrium has been found, this disequilibrium could then be a great signal for future price changes.
+But why would predicting next months wheat price be of interest intuitively? Well, it can solve many transport and storing desicions for starters. Once in a disequilibrium, such a model would give farmers and companies guidence of how to act in relation to harvest that should be realised until next month. It would also help manage for example mill input costs. 
 
 ## Data
 So for this analysis, Wheat is used for every month of  19 different European countries. This data was retrived from the FAO's Food Price Monitoring and Analysis tool, which can be found at this URL: https://fpma.fao.org/giews/fpmat4/global/#/dashboard/tool/international. On this tool, there are even more countries but a lot of them have alot of missing data.
@@ -50,6 +54,9 @@ An example of the prediciton and the actual value can be found below
 
 What is interesting about this model is however that it is quite bad at predicting prices during more global events, such as for example the war in Ukraine, but is excellent to predict local price disequilibirums, such as how Italy bounced back from its drought 2025. 
 
+## Further projects
+Based on my analysis and model, it would be interesting to continue developing analysis, by building a model focused on long run price forecasts in the region and combine with this model in a forecast reconciliation. 
+My next project will therefore be focused on long run forecast of price in the region, in order to combine output to be able to forecast more complex scenarios.
 
 
 
