@@ -15,7 +15,7 @@ The reason for studying spatial disequilibriums in wheat markets are two-fold. F
 But why would predicting next month's wheat price be of interest intuitively? Well, it can solve many transport and storing decisions for starters. Once in a disequilibrium, such a model would give farmers and companies guidance of how to act in relation to harvest that should be realised by next month. Since one could for example more easily value the carrying costs of wheat in the current climate. It would also help manage for example mill input costs. 
 
 ## Data
-So for this analysis, Wheat is used for every month of  19 different European countries, spanning from January 2014 until July 2026. This data was retrieved from the FAO's Food Price Monitoring and Analysis tool, which can be found at this URL: https://fpma.fao.org/giews/fpmat4/global/#/dashboard/tool/international. On this tool, there are even more countries but a lot of them have a lot of missing data, which is why I settled for using 19 out of them.
+So for this analysis, Wheat which is of bread making quality is used for every month of  19 different European countries, spanning from January 2014 until July 2026. This data was retrieved from the FAO's Food Price Monitoring and Analysis tool, which can be found at this URL: https://fpma.fao.org/giews/fpmat4/global/#/dashboard/tool/international. On this tool, there are even more countries but a lot of them have a lot of missing data, which is why I settled for using 19 out of them.
 
 ## Method
 DISCLAIMER: The purpose of this method is not to produce causal results, since this is not the aim of the project. But rather to find out how deviation from spatial equilibriums usually behave, and if there are any good indicators of overshoot. Therefore, I will not address endogeneity problems related to the model, since this has little relevance for my specific purpose. 
@@ -58,7 +58,7 @@ Such a model compared to a baseline model, which only uses last month's price to
 An example of the prediction and the actual value can be found below
 <img width="1920" height="959" alt="model_predict_wheat" src=model_predict_wheat.png/>
 
-What is interesting about this model is however that it is quite bad at predicting prices during more global events, such as for example the war in Ukraine, but is excellent at predicting local price disequilibriums, such as how Italy bounced back from its drought in 2025. 
+What is interesting about this model is however that it is quite bad at predicting prices during more global events, such as for example the war in Ukraine, but is excellent at predicting local price disequilibriums, such as how Italy bounced back from a price peak in 2025. 
 
 ## Further projects
 Based on my analysis and model, it would be interesting to continue developing the analysis, by building a model focused on long run price forecasts in the region and combine with this model in a forecast reconciliation. 
