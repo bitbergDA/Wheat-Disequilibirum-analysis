@@ -40,10 +40,10 @@ $$
 ## Presentation
 This SDI can then be mapped and tracked, in order to understand how they behave. Below I show the 3 countries with the highest overall SDI and the lowest.
 
-<img width="1500" height="400" alt="highest_local_resid" src="https://github.com/user-attachments/assets/1bf4333b-0c52-4626-bc7f-a62710e66950" />
+<img width="1500" height="400" alt="highest_local_resid" src=highest_resid.png/>
 
 
-<img width="1500" height="400" alt="lowest_local_resid" src="https://github.com/user-attachments/assets/f8be5a15-555b-4ab7-84c5-743c10df7fc3" />
+<img width="1500" height="400" alt="lowest_local_resid" src=lowest_resid.png />
 
 In accordance with spatial economic theory, it appears that when spatial disequilibrium occurs in a country, there is always a bounce back. Meaning that the error term sticks out unusually in one direction, oftentime shortly after followed by it going in the opposite direction, always orbiting 0. This mean reversion of the error term also indicate stationarity.
 
@@ -56,7 +56,7 @@ It basically just predicts the current wheat price of a country at a certain tim
 Such a model compared to a baseline model, which only uses last month's price to predict today's price, performs on average 7% more accurately, or is on average 1 EURO per tonne closer in price, compared to a naive model. Strongly indicating that a SDI does contain some predicting power, the coefficient of it is also of negative sign, which is what was suspected, since a high SDI should be followed by a correction in the opposite direction (a drop in price) the next month. 
 
 An example of the prediction and the actual value can be found below
-<img width="1920" height="959" alt="model_predict_wheat" src="https://github.com/user-attachments/assets/dd4c5f3f-baeb-4b82-a0d1-79699e978f0b" />
+<img width="1920" height="959" alt="model_predict_wheat" src=model_predict_wheat.png/>
 
 What is interesting about this model is however that it is quite bad at predicting prices during more global events, such as for example the war in Ukraine, but is excellent at predicting local price disequilibriums, such as how Italy bounced back from its drought in 2025. 
 
